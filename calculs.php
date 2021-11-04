@@ -53,7 +53,7 @@ for ($col_i=1; $col_i<$howmany_cols+1; $col_i++ ){
 
     // should refer to previous column, what for the first calculus? what for the remaining?
     // we should have a first loop to define the start val outside of the calculation: stored in $calculus[0]
-    $calculus[$col_i][$row_i] = $calculus[$col_i-1][$row_i] . " " . $operators[ $random_operator ] . " " . $random_value;
+    $calculus[$col_i][$row_i] = "(".$calculus[$col_i-1][$row_i] . " " . $operators[ $random_operator ] . " " . $random_value.")";
     $results[$col_i][$row_i] = eval("return ".$calculus[$col_i][$row_i].";");
   }
 }
