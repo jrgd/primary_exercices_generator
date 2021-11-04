@@ -13,7 +13,7 @@ or
 ```bash
 php ./calculs.php
 ```
-this one generates tables for calculations
+this one generates tables for calculations; but it looks like i should do my own homework better first!
 
 
 Happy homeworking!
