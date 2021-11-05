@@ -7,13 +7,13 @@ You would use this from the command line, and copy-paste the output:
 ```bash
 php ./rand_int_list.php
 ```
-to work on french numbers, with which she still has sonme hesitations (she is a native english speaker)
+to work on french numbers, with which she still has some hesitations (she is a native english speaker)
 
 or
 ```bash
 php ./calculs.php
 ```
-this one generates tables for calculations; but it looks like i should do my own homework better first!
+this one generates tables for calculations.
 
 
 Happy homeworking!
