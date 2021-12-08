@@ -26,20 +26,28 @@
 // generate the auto-correction table
 // output everything
 
-$operators = ['-', '+', '*']; // '/', 
+$operators = ['-', '+']; //, '*']; // '/', 
 
 $howmany_cols = 5;
-$howmany_rows = 20;
+$howmany_rows = 10;
 $min_value = 1;
-$max_value = 20;
+$max_value = 50;
 
 $max_operator_index= count($operators)-1;
 
 // init
 $calculus = array();
 $results = array();
+// for($row_i=1; $row_i<$howmany_rows+1; $row_i++) {
+//   $calculus[0][$row_i] = rand($min_value, $max_value);
+// }
+
+$random_number_array = range($min_value, $max_value);
+shuffle($random_number_array );
+$random_number_array = array_slice($random_number_array ,1,$howmany_rows+1);
+sort($random_number_array);
 for($row_i=1; $row_i<$howmany_rows+1; $row_i++) {
-  $calculus[0][$row_i] = rand($min_value, $max_value);
+  $calculus[0][$row_i] = $random_number_array[$row_i];
 }
 
 for ($col_i=1; $col_i<$howmany_cols+1; $col_i++ ){
